@@ -144,6 +144,7 @@ page {
     }
 
     includeCSS {
+        bootstrap = EXT:my_sitepackage/Resources/Public/Css/bootstrap.min.css
         my_sitepackage_layout = EXT:my_sitepackage/Resources/Public/Css/layout.min.css
     }
 
@@ -160,6 +161,7 @@ page {
     }
 
     includeJSFooter {
+        bootstrap = EXT:my_sitepackage/Resources/Public/JavaScript/bootstrap.min.js
         my_sitepackage_scripts = EXT:my_sitepackage/Resources/Public/JavaScript/Dist/scripts.js
     }
 }
