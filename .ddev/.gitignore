@@ -1,0 +1,17 @@
+/.dbimageBuild
+/.global_commands
+/.homeadditions
+/.webimageBuild
+/apache
+/commands
+/db-build
+/db_snapshots
+/homeadditions
+/nginx_full
+/providers
+/traefik
+/web-build
+/web-entrypoint.d
+/xhprof
+/.ddev-docker-compose-base.yaml
+/.ddev-docker-compose-full.yaml
