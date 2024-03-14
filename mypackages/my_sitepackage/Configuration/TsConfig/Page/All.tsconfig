@@ -1,0 +1,7 @@
+#
+# PageTS for My Sitepackage
+#
+@import 'EXT:my_sitepackage/Configuration/TsConfig/Page/RTE.tsconfig'
+@import 'EXT:my_sitepackage/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+@import 'EXT:my_sitepackage/Configuration/TsConfig/Page/TCEMAIN.tsconfig'
+@import 'EXT:my_sitepackage/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig'

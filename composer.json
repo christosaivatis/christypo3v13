@@ -1,4 +1,10 @@
 {
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./mypackages/*"
+        }
+    ],
     "require": {
         "typo3/cms-adminpanel": "^13.0",
         "typo3/cms-backend": "^13.0",
@@ -36,7 +42,8 @@
         "typo3/cms-viewpage": "^13.0",
         "typo3/cms-webhooks": "^13.0",
         "typo3/cms-workspaces": "^13.0",
-        "typo3/minimal": "^13"
+        "typo3/minimal": "^13",
+        "christos-aivatis/my-sitepackage": "@dev"
     },
     "config": {
         "allow-plugins": {

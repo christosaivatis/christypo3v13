@@ -1,0 +1,23 @@
+{
+    "name": "christos-aivatis/my-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "Chris' TYPO3 Sitepackage",
+    "homepage": "https://github.com/christosaivatis/christypo3v13",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.0",
+        "typo3/cms-rte-ckeditor": "^13.0",
+        "typo3/cms-fluid-styled-content": "^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChristosAivatis\\MySitepackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "my_sitepackage"
+        }
+    }
+}
