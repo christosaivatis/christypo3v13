@@ -1,2 +1,4 @@
 /_assets
+/typo3conf
 /typo3temp
+/index.php
