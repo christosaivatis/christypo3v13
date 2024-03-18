@@ -161,6 +161,9 @@ page {
     }
 
     includeJSFooter {
+        popper = https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js
+        popper.external = 1
+        popper.integrity = sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r
         bootstrap = EXT:my_sitepackage/Resources/Public/JavaScript/bootstrap.min.js
         my_sitepackage_scripts = EXT:my_sitepackage/Resources/Public/JavaScript/Dist/scripts.js
     }
