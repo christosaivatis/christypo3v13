@@ -6,12 +6,14 @@ errorHandling:
     errorContentSource: 't3://page?uid=5'
 languages:
   -
-    title: English
+    title: Deutsch
     enabled: true
     languageId: 0
     base: /
-    locale: en_US.UTF-8
-    navigationTitle: English
-    flag: us
+    locale: de_DE
+    navigationTitle: German
+    flag: de
+    hreflang: de-DE
+    websiteTitle: ''
 rootPageId: 1
 websiteTitle: ''
