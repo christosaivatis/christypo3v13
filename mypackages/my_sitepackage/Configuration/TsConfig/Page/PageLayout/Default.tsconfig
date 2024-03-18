@@ -1,11 +1,11 @@
-#
-# BACKENDLAYOUT: DEFAULT
-#
+################################
+#### BACKENDLAYOUT: DEFAULT ####
+################################
 mod {
     web_layout {
         BackendLayouts {
-            default {
-                title = LLL:EXT:my_sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+            Default {
+                title = Standard (Eine Spalte)
                 config {
                     backend_layout {
                         colCount = 1
@@ -14,7 +14,7 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:my_sitepackage/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
+                                        name = Hauptinhalt
                                         colPos = 0
                                     }
                                 }
@@ -22,7 +22,6 @@ mod {
                         }
                     }
                 }
-                icon = EXT:my_sitepackage/Resources/Public/Images/BackendLayouts/default.png
             }
         }
     }

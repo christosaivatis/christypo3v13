@@ -1,0 +1,32 @@
+###################################
+#### BACKENDLAYOUT: TWOCOLUMNS ####
+###################################
+mod {
+    web_layout {
+        BackendLayouts {
+            TwoColumns {
+                title = Zwei Spalten
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Linke Spalte
+                                        colPos = 1
+                                    }
+                                    2 {
+                                        name = Rechte Spalte
+                                        colPos = 3
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

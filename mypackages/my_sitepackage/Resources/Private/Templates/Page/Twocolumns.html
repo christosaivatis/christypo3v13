@@ -10,8 +10,17 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-1 col-lg-2"></div>
-                <div class="col-sm-10 col-lg-8">
-                    <f:for each="{mainContent}" as="contentElement">
+                <div class="col-sm-5 col-lg-4 mx-1 p-4 border border-primary-subtle border-5 rounded-5">
+                    <f:for each="{leftColumn}" as="contentElement">
+                        <f:cObject
+                                typoscriptObjectPath="tt_content.{contentElement.data.CType}"
+                                data="{contentElement.data}"
+                                table="tt_content"
+                        />
+                    </f:for>
+                </div>
+                <div class="col-sm-5 col-lg-4 mx-1 p-4 border border-success-subtle border-5 rounded-5">
+                    <f:for each="{rightColumn}" as="contentElement">
                         <f:cObject
                                 typoscriptObjectPath="tt_content.{contentElement.data.CType}"
                                 data="{contentElement.data}"

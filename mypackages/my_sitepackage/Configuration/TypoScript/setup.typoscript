@@ -70,6 +70,34 @@ page {
                 includeSpacer = 1
                 as = navigation
             }
+            30 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            30 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 0
+                as = mainContent
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            40 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 1
+                as = leftColumn
+            }
+            50 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            50 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 2
+                as = middleColumn
+            }
+            60 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            60 {
+                table = tt_content
+                orderBy = sorting
+                where = colPos = 3
+                as = rightColumn
+            }
         }
     }
 

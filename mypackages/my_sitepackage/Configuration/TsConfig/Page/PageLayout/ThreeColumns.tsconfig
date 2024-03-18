@@ -1,0 +1,36 @@
+#####################################
+#### BACKENDLAYOUT: THREECOLUMNS ####
+#####################################
+mod {
+    web_layout {
+        BackendLayouts {
+            ThreeColumns {
+                title = Drei Spalten
+                config {
+                    backend_layout {
+                        colCount = 3
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Linke Spalte
+                                        colPos = 1
+                                    }
+                                    2 {
+                                        name = Mittlere Spalte
+                                        colPos = 2
+                                    }
+                                    3 {
+                                        name = Rechte Spalte
+                                        colPos = 3
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+# Starting with TYPO3 12 the file Configuration/page.tsconfig
+# is automatically loaded during build time!
+
+@import 'EXT:my_sitepackage/Configuration/TsConfig/Page/PageLayout/*.tsconfig'
+@import 'EXT:my_sitepackage/Configuration/TsConfig/Page/*.tsconfig'

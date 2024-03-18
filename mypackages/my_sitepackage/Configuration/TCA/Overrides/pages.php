@@ -1,18 +1,17 @@
 <?php
-defined('TYPO3') or die('Access denied.');
-call_user_func(function()
-{
-    /**
-     * Temporary variables
-     */
-    $extensionKey = 'my_sitepackage';
 
-    /**
-     * Default PageTS for MySitepackage
-     */
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
-        $extensionKey,
-        'Configuration/TsConfig/Page/All.tsconfig',
-        'My Sitepackage'
-    );
-});
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+/**
+ * Temporary variables
+ */
+$extensionKey = 'my_sitepackage';
+
+/**
+ * Default PageTS for MySitepackage
+ */
+ExtensionManagementUtility::registerPageTSConfigFile(
+    $extensionKey,
+    'Configuration/TsConfig/Page/myPageTSconfigFile.tsconfig',
+    'My special config'
+);
