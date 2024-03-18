@@ -27,49 +27,55 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
-                <f:for each="{mainnavigation}" as="mainnavigationItem">
-                    <f:if condition="{mainnavigationItem.hasSubpages}">
-                        <f:then>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle"
-                                   href="#"
-                                   role="button"
-                                   data-bs-toggle="dropdown"
-                                   aria-expanded="false"
-                                >
-                                    {mainnavigationItem.title}
-                                </a>
-                                <ul class="dropdown-menu">
-                                        <f:for each="{mainnavigationItem.children}" as="child">
-                                            <li>
-                                                <a class="dropdown-item
-                                                {f:if(condition: child.active, then:'active')}"
-                                                   href="{child.link}"
-                                                   target="{child.target}"
-                                                   title="{child.title}"
-                                                >
-                                                    {child.title}
-                                                </a>
-                                            </li>
-                                        </f:for>
-                                </ul>
-                            </li>
-                        </f:then>
-                        <f:else>
-                            <li class="nav-item">
-                                <a class="nav-link
-                                {f:if(condition: mainnavigationItem.active, then:'active')}"
-                                   href="{mainnavigationItem.link}"
-                                   target="{mainnavigationItem.target}"
-                                   title="{mainnavigationItem.title}"
-                                >
-                                    {mainnavigationItem.title}
-                                </a>
-                            </li>
-                        </f:else>
+                <f:for each="{navigation}" as="navigationItem">
+                    <f:if condition="{navigationItem.title} != 'Footer'">
+                        <f:if condition="{navigationItem.hasSubpages}">
+                            <f:then>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle"
+                                       href="#"
+                                       role="button"
+                                       data-bs-toggle="dropdown"
+                                       aria-expanded="false"
+                                    >
+                                        {navigationItem.title}
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                            <f:for each="{navigationItem.children}" as="child">
+                                                <li>
+                                                    <a class="dropdown-item
+                                                    {f:if(condition: child.active, then:'active')}"
+                                                       href="{child.link}"
+                                                       target="{child.target}"
+                                                       title="{child.title}"
+                                                    >
+                                                        {child.title}
+                                                    </a>
+                                                </li>
+                                            </f:for>
+                                    </ul>
+                                </li>
+                            </f:then>
+                            <f:else>
+                                <li class="nav-item">
+                                    <a class="nav-link
+                                    {f:if(condition: navigationItem.active, then:'active')}"
+                                       href="{navigationItem.link}"
+                                       target="{navigationItem.target}"
+                                       title="{navigationItem.title}"
+                                    >
+                                        {navigationItem.title}
+                                    </a>
+                                </li>
+                            </f:else>
+                        </f:if>
                     </f:if>
                 </f:for>
             </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
 
     </div>
