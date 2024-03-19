@@ -54,3 +54,12 @@ config {
     headerComment = build by sitepackagebuilder.com
     sendCacheHeaders = 1
 }
+
+
+#####################
+#### CMS-FELOGIN ####
+#####################
+plugin.tx_felogin_login.view {
+    templateRootPath = EXT:my_sitepackage/Resources/Private/Extensions/cms-felogin/Templates/
+    partialRootPath = EXT:my_sitepackage/Resources/Private/Extensions/cms-felogin/Partials/
+}

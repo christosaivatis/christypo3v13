@@ -1,7 +1,4 @@
-<html
-        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-        data-namespace-typo3-fluid="true"
->
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <div class="container-fluid bg-light">
     <footer class="py-3 mt-5">
@@ -12,8 +9,8 @@
                     <f:if condition="{navigationItem.children}">
                         <f:for each="{navigationItem.children}" as="child">
                             <li class="nav-item">
-                                <a class="px-2 text-primary link-offset-2
-                                link-underline link-underline-opacity-0 link-underline-opacity-75-hover
+                                <a class="px-2 text-dark-emphasis link-underline-primary link-offset-2
+                                link-underline-opacity-0 link-underline-opacity-75-hover
                                 {f:if(condition: child.active, then:'active')}"
                                    href="{child.link}"
                                    target="{child.target}"
@@ -30,42 +27,29 @@
 
         <p class="text-center text-muted">&copy; 2024 Christos Aivatis</p>
 
-        <f:comment>Reference for my coffee favicon and logo</f:comment>
+        <f:comment>References for my icons and logo</f:comment>
         <p class="text-center text-muted">
             <a target="_blank" href="https://icons8.com/icon/hCiex1L35nUt/hot-beverage"
-                class="text-primary link-offset-2
-                link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                class="text-primary link-underline-success link-offset-2
+               link-underline-opacity-0 link-underline-opacity-75-hover"
             >
-                Coffee ("Hot Beverage")</a> icon by
-            <a target="_blank" href="https://icons8.com"
-               class="text-primary link-offset-2
-                link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-            >Icons8</a>
-        </p>
+                Kaffee</a>- ("Hot Beverage"),
 
-        <f:comment>Reference for my login icon</f:comment>
-        <p class="text-center text-muted">
             <a target="_blank" href="https://icons8.com/icon/L46FqGIVISDK/login"
-               class="text-primary link-offset-2
-                link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+               class="text-primary link-underline-success link-offset-2
+               link-underline-opacity-0 link-underline-opacity-75-hover"
             >
-                Login</a> Icon von
-            <a target="_blank" href="https://icons8.com"
-               class="text-primary link-offset-2
-                link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-            >Icons8</a>
-        </p>
+                Einloggen</a>- ("login") und
 
-        <f:comment>Reference for my logout icon</f:comment>
-        <p class="text-center text-muted">
             <a target="_blank" href="https://icons8.com/icon/vRro1MfimBYU/logout"
-               class="text-primary link-offset-2
-                link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+               class="text-primary link-underline-success link-offset-2
+               link-underline-opacity-0 link-underline-opacity-75-hover"
             >
-                Ausloggen</a> Icon von
+                Ausloggen</a>- ("Logout") Icon von
+
             <a target="_blank" href="https://icons8.com"
-               class="text-primary link-offset-2
-                link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+               class="text-primary link-underline-success link-offset-2
+               link-underline-opacity-0 link-underline-opacity-75-hover"
             >Icons8</a>
         </p>
 

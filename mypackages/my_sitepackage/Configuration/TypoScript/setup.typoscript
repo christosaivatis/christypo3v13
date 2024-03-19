@@ -234,3 +234,12 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
+
+
+#####################
+#### CMS-FELOGIN ####
+#####################
+plugin.tx_felogin_login.settings {
+    email_from = someone@somewhere.somehow
+    email_fromName = Someone Someoneopoulos
+}
